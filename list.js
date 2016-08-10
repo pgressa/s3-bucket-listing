@@ -106,6 +106,7 @@ function createS3QueryUrl(marker) {
   if (marker) {
     s3_rest_url += '&marker=' + marker;
   }
+  console.info(s3_rest_url);
   return s3_rest_url;
 }
 
