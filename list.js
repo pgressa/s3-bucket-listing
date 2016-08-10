@@ -36,6 +36,7 @@ function getS3Data(marker, html) {
       $('#listing').html('');
       var xml = $(data);
       var info = getInfoFromS3Data(xml);
+      console.info(info);
 
       buildNavigation(info)
 
